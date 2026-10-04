@@ -1,4 +1,4 @@
-# Monster Hunter Apps
+# Raven's Monster Hunter Apps
 
 The hub page at https://armoredraven17.github.io/. It links to every Monster Hunter fan app.
 

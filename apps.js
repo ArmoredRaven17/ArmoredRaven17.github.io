@@ -32,10 +32,10 @@ const GAMES = [
         { name: 'Zenny Gauntlet', url: 'https://armoredraven17.github.io/MHGU-Zenny-Gauntlet/',
           desc: 'A scored challenge run — fail a hunt or get carted and you lose that weapon/style combo for the rest of the run.' },
       ] },
-      { name: 'Silly Things', color: '#e06666', apps: [
+      { name: 'Silly Things', color: '#eb7474', apps: [
         { name: 'Charm Farm', url: 'https://armoredraven17.github.io/mhgu-charm-farm/',
           desc: 'A Clicker/Idle game about beating up various Brachydios until you finally get the desired God Charms you always wanted.' },
-        { name: 'Fishing', url: 'https://armoredraven17.github.io/mhgu-fishing/',
+        { name: 'Fishing (Beta)', url: 'https://armoredraven17.github.io/mhgu-fishing/',
           desc: "A fishing sim on the game's own tables — prepare at camp, travel to a locale, come home with the catch." },
       ] },
       { name: 'WIP', color: '#e8a13a', apps: [

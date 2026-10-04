@@ -1,14 +1,18 @@
 @font-face { font-family: 'MHFU'; src: url('fonts/mhfu_font.ttf'); }
 
-/* The MHGU apps' default (pre-theme) palette, from mhgu-collection-tracker. */
+/* The apps' Nerscylla theme (#4e2fa2), derived the way mhgu-collection-tracker's applyTheme
+   does it: HSL lightness scaled by .70 (--bg), .55 (--content-bg), .40 (--panel-bg), .95 (--bg2);
+   --link is the lightness pushed 60% toward white. */
 :root {
-  --bg: #3e3e3e;
-  --content-bg: #0e0d11;
-  --panel-bg: #141418;
+  --bg: #372171;
+  --content-bg: #2b1a59;
+  --panel-bg: #1f1341;
+  --bg2: #4a2d9a;
   --line: #ffffff1f;
-  --card: #ffffff0d;
+  --card: var(--panel-bg);
+  --card-hover: var(--bg);
   --text: #f3f3f3;
-  --link: #9fc3ec;
+  --link: #b4a2e4;
 }
 
 * { box-sizing: border-box; }
@@ -29,13 +33,13 @@ body {
   background: var(--bg);
   border-bottom: 1px solid var(--line);
 }
-.title-icon { width: 30px; height: 30px; image-rendering: pixelated; }
+.title-icon { width: 30px; height: 30px; }
 .titlebar h1 { margin: 0; font-size: 18px; font-weight: 600; }
 
 main { max-width: 1100px; margin: 0 auto; padding: 16px 16px 40px; }
-.intro { margin: 4px 0 8px; opacity: .8; }
 
 .game { margin-top: 24px; }
+.game:first-child { margin-top: 4px; }
 .game h2 { margin: 0 0 12px; font-size: 16px; font-weight: 600; }
 .group {
   margin: 16px 0 8px;
@@ -53,7 +57,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px 16px 40px; }
   display: inline-block;
   padding: 2px 8px;
   border-radius: 10px;
-  background: var(--bg);
+  background: var(--bg2);
   font-size: 12px;
 }
 
@@ -74,7 +78,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px 16px 40px; }
   color: inherit;
   text-decoration: none;
 }
-a.card:hover { background: var(--panel-bg); border-color: #ffffff40; }
+a.card:hover { background: var(--card-hover); border-color: #ffffff40; }
 a.card .card-name { color: var(--link); }
 .card-name { font-size: 15px; }
 .card-desc { font-size: 12px; opacity: .8; line-height: 1.4; }
