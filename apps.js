@@ -1,0 +1,84 @@
+// Every game and app on the hub. To add an app, add one { name, url, desc } entry
+// to its game; leave `url` off and set `soon: true` for one that isn't live yet.
+// To add a game, add a new block. The MHGU blurbs match the in-app "Other MHGU Apps" modal.
+const GAMES = [
+  {
+    short: 'MHGU',
+    name: 'Monster Hunter Generations Ultimate',
+    apps: [
+      { name: 'Quest Randomizer', url: 'https://armoredraven17.github.io/MHGU-Quest-Randomizer/',
+        desc: "Rolls random quests when you can't decide what to hunt." },
+      { name: 'Collection Tracker', url: 'https://armoredraven17.github.io/mhgu-collection-tracker/',
+        desc: 'Tracks which weapons, armor and Palico gear you own, and what it costs to finish them.' },
+      { name: 'Equipment Box', url: 'https://armoredraven17.github.io/mhgu-equipment-box/',
+        desc: 'Mirrors the in-game box — 2000 hunter slots and 1000 Palico — so you can plan where things sit.' },
+      { name: 'Bingo', url: 'https://armoredraven17.github.io/MHGU-Bingo/',
+        desc: 'Builds a bingo card of hunting goals, with a shareable seed so a group can race the same board.' },
+      { name: 'Hunting Log', url: 'https://armoredraven17.github.io/MHGU-Hunting-Log/',
+        desc: 'Keeps a running record of your hunts — what you were after, what you wore, who came along.' },
+      { name: 'Zenny Gauntlet', url: 'https://armoredraven17.github.io/MHGU-Zenny-Gauntlet/',
+        desc: 'A scored challenge run — fail a hunt or get carted and you lose that weapon/style combo for the rest of the run.' },
+      { name: 'Set Builder', url: 'https://armoredraven17.github.io/mhgu-set-builder/',
+        desc: 'Assemble a full set by hand and see exactly which skills it activates.' },
+      { name: 'Weapon Trees', url: 'https://armoredraven17.github.io/mhgu-weapon-trees/',
+        desc: 'Browse every weapon upgrade tree, with full stats on any node you click.' },
+      { name: 'Challenge Run', url: 'https://armoredraven17.github.io/MHGU-Challenge-Run/',
+        desc: 'A permadeath challenge run — start from a root weapon, lose it on any quest failure, clear every Key Quest.' },
+      { name: 'Charm Farm', url: 'https://armoredraven17.github.io/mhgu-charm-farm/',
+        desc: 'A Clicker/Idle game about beating up various Brachydios until you finally get the desired God Charms you always wanted.' },
+      { name: 'Talisman Bingo', url: 'https://armoredraven17.github.io/mhgu-talisman-bingo/',
+        desc: 'A bingo card of talisman conditions — keep drawing charms until one finally fills the line you needed.' },
+      { name: 'Fishing', url: 'https://armoredraven17.github.io/mhgu-fishing/',
+        desc: "A fishing sim on the game's own tables — prepare at camp, travel to a locale, come home with the catch." },
+      { name: 'Armor Viewer', url: 'https://armoredraven17.github.io/mhgu-armor-viewer/',
+        desc: 'Renders a hunter in 3D with every armor piece swappable, so you can mix and match a set.' },
+      { name: 'Monster Viewer', url: 'https://armoredraven17.github.io/mhgu-monster-viewer/',
+        desc: 'Renders every monster in 3D with its own motion lists, so you can watch what they actually do.' },
+    ],
+  },
+  {
+    short: 'MHFU',
+    name: 'Monster Hunter Freedom Unite',
+    apps: [
+      { name: 'MHFU LookUp', url: 'https://armoredraven17.github.io/MHFU-LookUp-Test/',
+        desc: 'A reference for weapons, armor, monsters, quests, items and gathering.' },
+    ],
+  },
+  {
+    short: 'MH3U',
+    name: 'Monster Hunter 3 Ultimate',
+    apps: [
+      { name: 'Monster Viewer', soon: true,
+        desc: 'Every monster in 3D with its own motion lists.' },
+      { name: 'Armor Viewer', soon: true,
+        desc: 'A hunter in 3D with every armor piece swappable.' },
+    ],
+  },
+];
+
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text) e.textContent = text;
+  return e;
+}
+
+const main = document.getElementById('games');
+for (const game of GAMES) {
+  const section = el('section', 'game');
+  const head = el('h2');
+  head.append(el('span', 'game-tag', game.short), ' ', game.name);
+  section.append(head);
+
+  const grid = el('div', 'grid');
+  for (const app of game.apps) {
+    const card = app.url ? el('a', 'card') : el('div', 'card soon');
+    if (app.url) card.href = app.url;
+    const title = el('span', 'card-name', app.name);
+    if (app.soon) title.append(' ', el('span', 'soon-tag', 'Coming soon'));
+    card.append(title, el('span', 'card-desc', app.desc));
+    grid.append(card);
+  }
+  section.append(grid);
+  main.append(section);
+}
