@@ -59,11 +59,13 @@ const GAMES = [
   {
     short: 'MH3U',
     name: 'Monster Hunter 3 Ultimate',
-    apps: [
-      { name: 'Monster Viewer', url: 'https://armoredraven17.github.io/mh3u-monster-viewer/',
-        desc: 'Every monster in 3D with its own motion lists.' },
-      { name: 'Armor Viewer', url: 'https://armoredraven17.github.io/mh3u-armor-viewer/',
-        desc: 'A hunter in 3D with every armor piece swappable.' },
+    groups: [
+      { name: 'WIP', color: '#e8a13a', apps: [
+        { name: 'Monster Viewer', url: 'https://armoredraven17.github.io/mh3u-monster-viewer/',
+          desc: 'Every monster in 3D with its own motion lists.' },
+        { name: 'Armor Viewer', url: 'https://armoredraven17.github.io/mh3u-armor-viewer/',
+          desc: 'A hunter in 3D with every armor piece swappable.' },
+      ] },
     ],
   },
 ];
