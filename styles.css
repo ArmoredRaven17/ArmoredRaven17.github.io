@@ -32,6 +32,10 @@ body {
   padding: 10px 16px;
   background: var(--bg);
   border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .45);
 }
 .title-icon { width: 30px; height: 30px; }
 .titlebar h1 { margin: 0; font-size: 18px; font-weight: 600; }
