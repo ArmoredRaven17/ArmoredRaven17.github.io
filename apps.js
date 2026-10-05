@@ -62,6 +62,10 @@ const GAMES = [
     short: 'MH3U',
     name: 'Monster Hunter 3 Ultimate',
     groups: [
+      { name: 'Utilities', color: '#5aa9e6', apps: [
+        { name: 'Collection Tracker', url: 'https://armoredraven17.github.io/mh3u-collection-tracker/',
+          desc: 'Tracks which weapons and armor you own, and what it costs to finish them.' },
+      ] },
       { name: 'WIP', color: '#e8a13a', apps: [
         { name: 'Monster Viewer', url: 'https://armoredraven17.github.io/mh3u-monster-viewer/',
           desc: 'Every monster in 3D with its own motion lists.' },
