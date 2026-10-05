@@ -51,9 +51,11 @@ const GAMES = [
   {
     short: 'MHFU',
     name: 'Monster Hunter Freedom Unite',
-    apps: [
-      { name: 'MHFU LookUp', url: 'https://armoredraven17.github.io/MHFU-LookUp-Test/',
-        desc: 'A reference for weapons, armor, monsters, quests, items and gathering.' },
+    groups: [
+      { name: 'Utilities', color: '#5aa9e6', apps: [
+        { name: 'MHFU LookUp', url: 'https://armoredraven17.github.io/MHFU-LookUp-Test/',
+          desc: 'A reference for weapons, armor, monsters, quests, items and gathering.' },
+      ] },
     ],
   },
   {
