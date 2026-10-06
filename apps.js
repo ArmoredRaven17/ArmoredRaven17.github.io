@@ -65,6 +65,8 @@ const GAMES = [
       { name: 'Utilities', color: '#5aa9e6', apps: [
         { name: 'Collection Tracker', url: 'https://armoredraven17.github.io/mh3u-collection-tracker/',
           desc: 'Tracks which weapons and armor you own, and what it costs to finish them.' },
+        { name: 'Weapon Trees', url: 'https://armoredraven17.github.io/mh3u-weapon-trees/',
+          desc: 'Every weapon upgrade tree, with full stats on any node.' },
       ] },
       { name: 'WIP', color: '#e8a13a', apps: [
         { name: 'Monster Viewer', url: 'https://armoredraven17.github.io/mh3u-monster-viewer/',
