@@ -49,12 +49,12 @@ const GAMES = [
     ],
   },
   {
-    short: 'MHFU',
-    name: 'Monster Hunter Freedom Unite',
+    short: 'MH4U',
+    name: 'Monster Hunter 4 Ultimate',
     groups: [
       { name: 'Utilities', color: '#5aa9e6', apps: [
-        { name: 'MHFU LookUp', url: 'https://armoredraven17.github.io/MHFU-LookUp-Test/',
-          desc: 'A reference for weapons, armor, monsters, quests, items and gathering.' },
+        { name: 'Collection Tracker', url: 'https://armoredraven17.github.io/mh4u-collection-tracker/',
+          desc: 'Tracks which weapons and armor you own, and what it costs to finish them.' },
       ] },
     ],
   },
@@ -79,6 +79,16 @@ const GAMES = [
           desc: 'A hunter in 3D with every armor piece swappable.' },
         { name: 'Monster Viewer', url: 'https://armoredraven17.github.io/mh3u-monster-viewer/',
           desc: 'Every monster in 3D with its own motion lists.' },
+      ] },
+    ],
+  },
+  {
+    short: 'MHFU',
+    name: 'Monster Hunter Freedom Unite',
+    groups: [
+      { name: 'Database', color: '#c792ff', apps: [
+        { name: 'MHFU LookUp', url: 'https://armoredraven17.github.io/MHFU-LookUp-Test/',
+          desc: 'A reference for weapons, armor, monsters, quests, items and gathering.' },
       ] },
     ],
   },
