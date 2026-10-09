@@ -66,6 +66,10 @@ const GAMES = [
         { name: 'Quest Randomizer', url: 'https://armoredraven17.github.io/mh4u-quest-randomizer/',
           desc: "Rolls a random quest and weapon when you can't decide what to hunt." },
       ] },
+      { name: 'WIP', color: '#e8a13a', apps: [
+        { name: 'Monster Viewer', url: 'https://armoredraven17.github.io/mh4u-monster-viewer/',
+          desc: 'Every monster in 3D with its own motion lists.' },
+      ] },
     ],
   },
   {
