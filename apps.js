@@ -21,6 +21,8 @@ const GAMES = [
           desc: 'Assemble a full set by hand and see exactly which skills it activates.' },
         { name: 'Armor Skills Explained', url: 'https://armoredraven17.github.io/mhgu-armor-skills-explained/',
           desc: "Every armor skill: the game's own description, then what it actually does, with the numbers." },
+        { name: 'Talisman Odds', url: 'https://armoredraven17.github.io/mhgu-talisman-odds/',
+          desc: 'Enter a talisman and see the exact odds of rolling it, from quest charms and the Melding Pot.' },
       ] },
       { name: 'Play Augmentation', color: '#6cc46c', apps: [
         { name: 'Quest Randomizer', url: 'https://armoredraven17.github.io/MHGU-Quest-Randomizer/',
