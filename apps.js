@@ -19,6 +19,8 @@ const GAMES = [
           desc: 'Mirrors the in-game box — 2000 hunter slots and 1000 Palico — so you can plan where things sit.' },
         { name: 'Set Builder', url: 'https://armoredraven17.github.io/mhgu-set-builder/',
           desc: 'Assemble a full set by hand and see exactly which skills it activates.' },
+        { name: 'Skill Ledger', url: 'https://armoredraven17.github.io/mhgu-skill-ledger/',
+          desc: "Every armor skill: the game's own description, then what it actually does, with the numbers." },
       ] },
       { name: 'Play Augmentation', color: '#6cc46c', apps: [
         { name: 'Quest Randomizer', url: 'https://armoredraven17.github.io/MHGU-Quest-Randomizer/',
