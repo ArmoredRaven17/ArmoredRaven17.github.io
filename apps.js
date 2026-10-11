@@ -69,6 +69,8 @@ const GAMES = [
           desc: "Rolls a random quest and weapon when you can't decide what to hunt." },
       ] },
       { name: 'WIP', color: '#e8a13a', apps: [
+        { name: 'Armor Viewer', url: 'https://armoredraven17.github.io/mh4u-armor-viewer/',
+          desc: 'A hunter in 3D with every armor piece swappable.' },
         { name: 'Monster Viewer', url: 'https://armoredraven17.github.io/mh4u-monster-viewer/',
           desc: 'Every monster in 3D with its own motion lists.' },
       ] },
@@ -85,6 +87,8 @@ const GAMES = [
           desc: 'Every weapon upgrade tree, with full stats on any node.' },
         { name: 'Hunting Log', url: 'https://armoredraven17.github.io/mh3u-hunting-log/',
           desc: 'Keeps a running record of your hunts — what you were after, what you wore, who came along.' },
+        { name: 'Armor Skills Explained', url: 'https://armoredraven17.github.io/mh3u-armor-skills-explained/',
+          desc: "Every armor skill: the game's own description, then what it actually does, with the numbers." },
       ] },
       { name: 'Play Augmentation', color: '#6cc46c', apps: [
         { name: 'Quest Randomizer', url: 'https://armoredraven17.github.io/mh3u-quest-randomizer/',
