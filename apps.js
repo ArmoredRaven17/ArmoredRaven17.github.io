@@ -63,6 +63,8 @@ const GAMES = [
           desc: 'Every weapon upgrade tree, with full stats on any node.' },
         { name: 'Hunting Log', url: 'https://armoredraven17.github.io/mh4u-hunting-log/',
           desc: 'Keeps a running record of your hunts — what you were after, what you wore, who came along.' },
+        { name: 'Armor Skills Explained', url: 'https://armoredraven17.github.io/mh4u-armor-skills-explained/',
+          desc: "Every armor skill: the game's own description, then what it actually does, with the numbers." },
       ] },
       { name: 'Play Augmentation', color: '#6cc46c', apps: [
         { name: 'Quest Randomizer', url: 'https://armoredraven17.github.io/mh4u-quest-randomizer/',
