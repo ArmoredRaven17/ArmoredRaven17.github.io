@@ -112,6 +112,10 @@ const GAMES = [
         { name: 'MHFU LookUp', url: 'https://armoredraven17.github.io/MHFU-LookUp-Test/',
           desc: 'A reference for weapons, armor, monsters, quests, items and gathering.' },
       ] },
+      { name: 'Utilities', color: '#5aa9e6', apps: [
+        { name: 'Hunting Log', url: 'https://armoredraven17.github.io/mhfu-hunting-log/',
+          desc: 'Keeps a running record of your hunts — what you were after, what you wore, who came along.' },
+      ] },
     ],
   },
 ];
