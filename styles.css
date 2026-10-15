@@ -57,6 +57,8 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px 16px 40px; }
 .group-wrap[style] .group { color: var(--group); opacity: 1; }
 .group-wrap[style] .card { border-left: 3px solid var(--group); }
 .group-wrap[style] a.card .card-name { color: var(--group); }
+.game-note { margin: 10px 0 0; font-size: 12px; font-style: italic; opacity: .75; line-height: 1.4; }
+.page-notes { margin-top: 32px; padding-top: 12px; border-top: 1px solid var(--line); }
 .game-tag {
   display: inline-block;
   padding: 2px 8px;

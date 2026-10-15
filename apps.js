@@ -3,6 +3,18 @@
 // leave `url` off and set `soon: true` for one that isn't live yet. A group's
 // optional `color` tints its heading, its app names and the left edge of its cards.
 // To add a game, add a new block. The MHGU blurbs match the in-app "Other MHGU Apps" modal.
+// A game's optional `note` puts a * after its title and the note under its apps.
+// A group's optional `mark` follows its heading and points to a note in PAGE_NOTES.
+const REVIEW_NOTE = 'Game Data is still being reviewed; some mistakes may have gotten through, ' +
+  'I apologize for any incorrect info presented at this time.';
+
+// Footnotes at the bottom of the page.
+const PAGE_NOTES = [
+  '**The rendering apps involve a lot more decode work, mainly for effects. The basic rendering ' +
+    'work is not as involved. Keep in mind Animations will be reviewed once effects in place, ' +
+    'so expect some serious jank.',
+];
+
 const GAMES = [
   {
     short: 'MHGU',
@@ -42,7 +54,7 @@ const GAMES = [
         { name: 'Fishing (Beta)', url: 'https://armoredraven17.github.io/mhgu-fishing/',
           desc: "A fishing sim on the game's own tables — prepare at camp, travel to a locale, come home with the catch." },
       ] },
-      { name: 'WIP', color: '#e8a13a', apps: [
+      { name: 'WIP', mark: '**', color: '#e8a13a', apps: [
         { name: 'Armor Viewer', url: 'https://armoredraven17.github.io/mhgu-armor-viewer/',
           desc: 'Renders a hunter in 3D with every armor piece swappable, so you can mix and match a set.' },
         { name: 'Monster Viewer', url: 'https://armoredraven17.github.io/mhgu-monster-viewer/',
@@ -55,6 +67,7 @@ const GAMES = [
   {
     short: 'MH4U',
     name: 'Monster Hunter 4 Ultimate',
+    note: REVIEW_NOTE,
     groups: [
       { name: 'Utilities', color: '#5aa9e6', apps: [
         { name: 'Collection Tracker', url: 'https://armoredraven17.github.io/mh4u-collection-tracker/',
@@ -70,7 +83,7 @@ const GAMES = [
         { name: 'Quest Randomizer', url: 'https://armoredraven17.github.io/mh4u-quest-randomizer/',
           desc: "Rolls a random quest and weapon when you can't decide what to hunt." },
       ] },
-      { name: 'WIP', color: '#e8a13a', apps: [
+      { name: 'WIP', mark: '**', color: '#e8a13a', apps: [
         { name: 'Armor Viewer', url: 'https://armoredraven17.github.io/mh4u-armor-viewer/',
           desc: 'A hunter in 3D with every armor piece swappable.' },
         { name: 'Monster Viewer', url: 'https://armoredraven17.github.io/mh4u-monster-viewer/',
@@ -81,6 +94,7 @@ const GAMES = [
   {
     short: 'MH3U',
     name: 'Monster Hunter 3 Ultimate',
+    note: REVIEW_NOTE,
     groups: [
       { name: 'Utilities', color: '#5aa9e6', apps: [
         { name: 'Collection Tracker', url: 'https://armoredraven17.github.io/mh3u-collection-tracker/',
@@ -96,7 +110,7 @@ const GAMES = [
         { name: 'Quest Randomizer', url: 'https://armoredraven17.github.io/mh3u-quest-randomizer/',
           desc: "Rolls a random quest and weapon when you can't decide what to hunt." },
       ] },
-      { name: 'WIP', color: '#e8a13a', apps: [
+      { name: 'WIP', mark: '**', color: '#e8a13a', apps: [
         { name: 'Armor Viewer', url: 'https://armoredraven17.github.io/mh3u-armor-viewer/',
           desc: 'A hunter in 3D with every armor piece swappable.' },
         { name: 'Monster Viewer', url: 'https://armoredraven17.github.io/mh3u-monster-viewer/',
@@ -131,17 +145,24 @@ const main = document.getElementById('games');
 for (const game of GAMES) {
   const section = el('section', 'game');
   const head = el('h2');
-  head.append(el('span', 'game-tag', game.short), ' ', game.name);
+  head.append(el('span', 'game-tag', game.short), ' ', game.name + (game.note ? '*' : ''));
   section.append(head);
 
   for (const group of game.groups || [{ apps: game.apps }]) {
     const wrap = el('div', 'group-wrap');
     if (group.color) wrap.style.setProperty('--group', group.color);
-    if (group.name) wrap.append(el('h3', 'group', group.name));
+    if (group.name) wrap.append(el('h3', 'group', group.name + (group.mark || '')));
     wrap.append(grid(group.apps));
     section.append(wrap);
   }
+  if (game.note) section.append(el('p', 'game-note', '*' + game.note));
   main.append(section);
+}
+
+if (PAGE_NOTES.length) {
+  const footer = el('footer', 'page-notes');
+  for (const note of PAGE_NOTES) footer.append(el('p', 'game-note', note));
+  main.append(footer);
 }
 
 function grid(apps) {
