@@ -115,6 +115,8 @@ const GAMES = [
           desc: 'A hunter in 3D with every armor piece swappable.' },
         { name: 'Monster Viewer', url: 'https://armoredraven17.github.io/mh3u-monster-viewer/',
           desc: 'Every monster in 3D with its own motion lists.' },
+        { name: 'Monster Viewer HD', url: 'https://armoredraven17.github.io/mh3u-monster-viewer-hd/',
+          desc: "The Monster Viewer with the Wii U version's higher-resolution models and textures." },
       ] },
     ],
   },
