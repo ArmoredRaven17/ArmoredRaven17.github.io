@@ -133,6 +133,8 @@ const GAMES = [
           desc: 'Keeps a running record of your hunts — what you were after, what you wore, who came along.' },
       ] },
       { name: 'WIP', mark: '**', color: '#e8a13a', apps: [
+        { name: 'Armor Viewer', url: 'https://armoredraven17.github.io/mhfu-armor-viewer/',
+          desc: 'Renders a hunter in 3D with every armor piece swappable and every weapon worn where the game puts it, so you can mix and match a set.' },
         { name: 'Monster Viewer', url: 'https://armoredraven17.github.io/mhfu-monster-viewer/',
           desc: 'Renders every monster in 3D with its own animations and part breaks, so you can watch what they actually do.' },
       ] },
