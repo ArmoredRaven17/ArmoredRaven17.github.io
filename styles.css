@@ -44,6 +44,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px 16px 40px; }
 
 .game { margin-top: 24px; }
 .game:first-child { margin-top: 4px; }
+.game + .game { margin-top: 28px; padding-top: 24px; border-top: 1px solid #ffffff38; }
 .game h2 { margin: 0 0 12px; font-size: 16px; font-weight: 600; }
 .group {
   margin: 16px 0 8px;
