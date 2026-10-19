@@ -121,6 +121,8 @@ const GAMES = [
       { name: 'Viewers', mark: '**', color: '#e8a13a', apps: [
         { name: 'Armor Viewer (WIP: Basic)', url: 'https://armoredraven17.github.io/mh3u-armor-viewer/',
           desc: 'A hunter in 3D with every armor piece swappable.' },
+        { name: 'Armor Viewer HD (WIP: Basic)', url: 'https://armoredraven17.github.io/mh3u-armor-viewer-hd/',
+          desc: "The Armor Viewer with the Wii U version's models and textures." },
         { name: 'Monster Viewer (WIP: Basic)', url: 'https://armoredraven17.github.io/mh3u-monster-viewer/',
           desc: 'Every monster in 3D with its own motion lists.' },
         { name: 'Monster Viewer HD (WIP: Basic)', url: 'https://armoredraven17.github.io/mh3u-monster-viewer-hd/',
