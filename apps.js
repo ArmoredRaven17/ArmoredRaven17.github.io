@@ -60,7 +60,7 @@ const GAMES = [
       ] },
       { name: 'Viewers', mark: '**', color: '#e8a13a', apps: [
         { name: 'Armor Viewer (WIP: Advanced)', url: 'https://armoredraven17.github.io/mhgu-armor-viewer/',
-          desc: 'Renders a hunter in 3D with every armor piece swappable, so you can mix and match a set.' },
+          desc: "Renders MHGU armors in 3D while allowing for some customizations not allowed in game for people to create fashion sets." },
         { name: 'Locale Viewer', soon: true,
           desc: 'Renders the hunting locales and their areas in 3D.' },
         { name: 'Monster Viewer (WIP: Advanced)', url: 'https://armoredraven17.github.io/mhgu-monster-viewer/',
@@ -91,7 +91,7 @@ const GAMES = [
       ] },
       { name: 'Viewers', mark: '**', color: '#e8a13a', apps: [
         { name: 'Armor Viewer (WIP: Basic)', url: 'https://armoredraven17.github.io/mh4u-armor-viewer/',
-          desc: 'A hunter in 3D with every armor piece swappable.' },
+          desc: "Renders MH4U armors in 3D while allowing for some customizations not allowed in game for people to create fashion sets." },
         { name: 'Monster Viewer (WIP: Basic)', url: 'https://armoredraven17.github.io/mh4u-monster-viewer/',
           desc: 'Every monster in 3D with its own motion lists.' },
       ] },
@@ -120,9 +120,9 @@ const GAMES = [
       ] },
       { name: 'Viewers', mark: '**', color: '#e8a13a', apps: [
         { name: 'Armor Viewer (WIP: Basic)', url: 'https://armoredraven17.github.io/mh3u-armor-viewer/',
-          desc: 'A hunter in 3D with every armor piece swappable.' },
+          desc: "Renders MH3U armors in 3D while allowing for some customizations not allowed in game for people to create fashion sets." },
         { name: 'Armor Viewer HD (WIP: Basic)', url: 'https://armoredraven17.github.io/mh3u-armor-viewer-hd/',
-          desc: "The Armor Viewer with the Wii U version's models and textures." },
+          desc: "Renders MH3U armors in 3D while allowing for some customizations not allowed in game for people to create fashion sets." },
         { name: 'Monster Viewer (WIP: Basic)', url: 'https://armoredraven17.github.io/mh3u-monster-viewer/',
           desc: 'Every monster in 3D with its own motion lists.' },
         { name: 'Monster Viewer HD (WIP: Basic)', url: 'https://armoredraven17.github.io/mh3u-monster-viewer-hd/',
@@ -144,7 +144,7 @@ const GAMES = [
       ] },
       { name: 'Viewers', mark: '**', color: '#e8a13a', apps: [
         { name: 'Armor Viewer (WIP: Basic)', url: 'https://armoredraven17.github.io/mhfu-armor-viewer/',
-          desc: 'Renders a hunter in 3D with every armor piece swappable and every weapon worn where the game puts it, so you can mix and match a set.' },
+          desc: "Renders MHFU armors in 3D while allowing for some customizations not allowed in game for people to create fashion sets." },
         { name: 'Monster Viewer (WIP: Basic)', url: 'https://armoredraven17.github.io/mhfu-monster-viewer/',
           desc: 'Renders every monster in 3D with its own animations and part breaks, so you can watch what they actually do.' },
       ] },
